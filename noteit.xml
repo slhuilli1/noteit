@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" group="Content">
+	<name>Note it</name>
+	<author>Sebastien LHUILLIER</author>
+	<creationDate>Octobre 2023</creationDate>
+	<copyright>Sébastien LHUILLIER</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>sebastien.lhuillier+joomla@gmail.com</authorEmail>
+	<authorUrl>www.sebastien-lhuillier.com</authorUrl>
+	<version>1.0</version>
+	<description>Ce plugin génére des post it</description>
+	<files>
+		<filename plugin="noteit">noteit.php</filename>
+		<filename>noteit.xml</filename>			
+		<filename>style.css</filename>	
+	</files>
+	
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="note21" type="note" class="alert" label="Mode d'emploi" description='{noteit "titre" vert}ma note{/noteit} ou {noteit "titre" jaune}ma note{/noteit}' />		
+		</fieldset>	
+	</fields>
+	</config>	
+</extension>
